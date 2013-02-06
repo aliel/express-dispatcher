@@ -1,7 +1,7 @@
 expressjs-dispatcher
 ====================
 
-Dispacther for expressjs
+Dispatcher for expressjs
 
 
 ## Usage exemple
@@ -68,7 +68,7 @@ var main = exports._controller = {
 var express = require('express')
   , http = require('http')
   , path = require('path')
-  , dispatcher = require('dispatcher');
+  , dispatcher = require('express-dispatcher').dispatcher;
   
 var app = express();
 
