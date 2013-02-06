@@ -92,7 +92,7 @@ app.configure('development', function(){
 });
 
 // This dispatcher
-dispatcher.listen(app);
+dispatcher.init({app: app, path: __dirname + '/controllers/'});
 
 var server = http.createServer(app);
 
