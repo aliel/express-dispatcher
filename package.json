@@ -1,0 +1,14 @@
+{
+  "name": "expressjs-dispatcher",
+  "description": "Dispacther for expressjs",
+  "version": "dev",
+  "homepage": "https://github.com/aliel/expressjs-dispatcher",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aliel/expressjs-dispatcher.git"
+  },
+  "dependencies": {
+    "express": ">=3",
+    "file": "*",
+  }
+}
