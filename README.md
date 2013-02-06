@@ -3,6 +3,11 @@ expressjs-dispatcher
 
 Dispatcher for expressjs
 
+## Installation
+
+```js
+$ npm install -g express-dispatcher
+```
 
 ## Usage exemple
 ```js
