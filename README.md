@@ -1,7 +1,7 @@
 expressjs-dispatcher
 ====================
 
-Dispatcher for expressjs
+Dispatcher for expressjs : Under development !
 
 ## Installation
 
