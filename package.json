@@ -3,10 +3,10 @@
   "name": "express-dispatcher",
   "description": "Dispatcher for expressjs",
   "version": "0.0.0",
-  "homepage": "https://github.com/aliel/expressjs-dispatcher",
+  "homepage": "https://github.com/aliel/express-dispatcher",
   "repository": {
     "type": "git",
-    "url": "git://github.com/aliel/expressjs-dispatcher.git"
+    "url": "git://github.com/aliel/express-dispatcher.git"
   },
   "main": "lib/express-dispatcher.js",
   "engines": {
