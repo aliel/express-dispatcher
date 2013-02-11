@@ -27,7 +27,7 @@ describe("Routes test", function() {
         expect([dispatcher.routes].length).toBe(1);
     });
 
-    it("Added One route", function() {
+    it("One route added ?", function() {
         expect(app.routes.length).toBe(1);
     });
 
