@@ -1,4 +1,4 @@
-expressjs-dispatcher
+express-dispatcher
 ====================
 
 Dispatcher for expressjs : Under development !
