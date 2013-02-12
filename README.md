@@ -1,7 +1,7 @@
-express-dispatcher
+express-dispatcher [![Build Status](https://api.travis-ci.org/aliel/express-dispatcher.png)](https://travis-ci.org/aliel/express-dispatcher)
 ====================
 
-Dispatcher for expressjs : [![Build Status](https://api.travis-ci.org/aliel/express-dispatcher.png)](https://travis-ci.org/aliel/express-dispatcher) Under development !
+Dispatcher for expressjs : Under development !
 
 ## Installation
 
