@@ -13,7 +13,6 @@ dummyApp.prototype.get = function(verb, callback) {
 var app = new dummyApp();
 
 var path = __dirname + '/../test/controllers/';
-path = '/home/aliel/projects/nodejs/express-dispatcher/test/controllers/';
 
 describe("Routes test", function() {
     it("Zero routes", function() {
