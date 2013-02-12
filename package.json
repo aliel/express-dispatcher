@@ -9,6 +9,9 @@
     "url": "git://github.com/aliel/express-dispatcher.git"
   },
   "main": "lib/express-dispatcher.js",
+  "scripts": {
+    "test": "jasmine-node spec/"
+  },
   "engines": {
     "node": "~0.6.4"
   },
@@ -16,5 +19,7 @@
     "express": ">=2.0",
     "file": "*"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "jasmine-node": ""
+  }
 }
