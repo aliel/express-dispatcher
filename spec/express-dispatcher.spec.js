@@ -10,6 +10,12 @@ dummyApp.prototype.get = function(verb, callback) {
     this.routes.push(route);
 };
 
+dummyApp.prototype.post = function(verb, callback) {
+    var route = {};
+    route[verb] = callback;
+    this.routes.push(route);
+};
+
 var app = new dummyApp();
 
 var path = __dirname + '/../test/controllers/';
@@ -22,16 +28,15 @@ describe("Routes test", function() {
 
     it("One route", function() {
         dispatcher.init({app: app, path: path, routeFile : path + 'routes'});
-        expect([dispatcher.routes].length).toBe(1);
+        expect(dispatcher.routes.length).toBe(3);
     });
-
     it("One route added ?", function() {
-        expect(app.routes.length).toBe(1);
+        expect(app.routes.length).toBe(3);
     });
 });
 
-describe("Controller test", function() {
+describe("Controller tests", function() {
     it("Have action (callback)", function() {
-        expect(app.routes[0]['/'] instanceof Function).toBe(true);
+        expect(app.routes[0].index instanceof Function).toBe(true);
     });
 });

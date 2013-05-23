@@ -13,26 +13,33 @@ $ npm install -g express-dispatcher
 ```js
 // controllers/routes.js
 exports.routes = {
-    '/' : {
-        controller: 'main/index',
-        action: 'index',
-        view: 'index',
-        method: 'GET',
-        isSecure: false
+    app: {
+        'index' : {
+            path: '/',
+            controller: 'index',
+            action: 'index',
+            view: 'index',
+            method: 'GET',
+            isSecure: false
+        },
+        'about' : {
+            path: '/about',
+            controller: 'about',
+            action: 'index',
+            method: 'POST',
+            isSecure: false
+        }
     },
-    '/about' : {
-        controller: 'main/about',
-        action: 'index',
-        view: 'main/about',
-        method: 'GET',
-        isSecure: false
+    routes: {
+        'blog' : 'blog/routes',
+        'user' : 'user/routes'
     }
 };
 
-// for "/" VERB, load "main/index" from "./controllers/main/index"
+// for "/" VERB, load "controller/index" from "./controllers/main/index"
 // and execute "index" action
 
-// code of "controllers/main/index.js"
+// code of "controllers/index.js"
 var main = exports._controller = {
     index : function(req, res, next) {
         console.log('view is => ' + main.getView(req));
@@ -42,30 +49,6 @@ var main = exports._controller = {
 };
 ```
 
-## We can do it with another way
-
-```js
-// controllers/main/index.js
-var main = exports._controller = {
-    routes : {
-        '/' : {
-            action: 'index',
-            view: 'index',
-            method: 'GET',
-            isSecure: false
-        },
-        '/about' : {
-          //...
-        }
-    },
-
-    index : function(req, res, next) {
-        console.log('view is => ' + main.getView(req));
-        res.render(main.getView(req), { title: 'My title' });
-    },
-    about : function(req, res){/*...*/}
-};
-```
 
 ## Let's starting with a simple configuration of nodejs
 
@@ -115,6 +98,6 @@ controllers/routes.js
 controllers/main/index.js
 models
 views
-view/index.js
+views/index.js
 public
 ```
